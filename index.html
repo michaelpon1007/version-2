@@ -12,7 +12,7 @@
   </head>
   <body>
   <!-- Navigation for Assets -->
-  <ul class="nav nav-tabs navbar navbar-expand-md bg-white fixed-top" id="myTab" role="tablist">
+  <ul class="nav nav-tabs navbar navbar-expand-md bg-white fixed-top small" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="Login-tab" data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="true">Login</a>
     </li>
@@ -60,7 +60,10 @@
     </li>      
     <li class="nav-item">
       <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a>
-    </li>    
+    </li>  
+    <li class="nav-item">
+      <a class="nav-link" id="Survey-tab" data-toggle="tab" href="#Survey" role="tab" aria-controls="Survey" aria-selected="false">Survey</a>
+    </li>         
   </ul>
   <div class="container-fluid">
     <div class="tab-content mt-5 pt-5" id="myTabContent">
@@ -1020,7 +1023,7 @@
       Question Pool End 
       ===========================-->        
     </div>         
-    <div class="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+    <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
       <h5 class="mb-2">Horizontal Menu</h5>
       <!--==========================
       Menu Horizontal
@@ -1180,6 +1183,149 @@
       Menu Vertical End
       ===========================-->            
     </div>             
+    <div class="tab-pane fade show active" id="Survey" role="tabpanel" aria-labelledby="Survey-tab">    
+      <div class="border-bottom border-gray mb-3 pb-3">
+        <h3>Survey Title</h3>
+        <p class="mb-0">Overall question/description</p>
+      </div>
+      <form>                                                    
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 1 / Dropdown</label>
+          <select class="custom-select" id="inputGroupSelect03224">
+            <option value="Alpha" selected>Check/Radio // Previous + Number + Next</option>
+            <option value="Bravo">Check/Radio with Results // Previous + x of y + Next </option>
+            <option value="Charlie">Fill in the Blanks // x of y + Submit</option>
+            <option value="Delta3">Dropdown Matching // Percentage</option>
+          </select>
+        </div>   
+        <div class="form-group">
+          <label for="exampleFormControlTextarea133">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea133" rows="3"></textarea>
+        </div> 
+        <div class="form-group">
+          <label for="text22">Example textarea</label>
+          <input type="text" class="form-control" id="text22" rows="3"></textarea>
+        </div>          
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 2 / Radio Buttons vertical</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Second default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+            <label class="form-check-label" for="exampleRadios3">
+              Disabled radio
+            </label>
+          </div>          
+        </div> 
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 3 / Radio Buttons horizontal</label>
+          <div class="form-check pl-0">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios11" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios11">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios21" value="option2">
+              <label class="form-check-label" for="exampleRadios21">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios31" value="option3" >
+              <label class="form-check-label" for="exampleRadios31">
+                Disabled radio
+              </label>
+            </div>   
+          </div>
+        </div>       
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 4 / Checkbox Vertical with Text</label>
+          <div class="custom-control custom-checkbox">
+            <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember2">
+            <label class="form-check-label custom-control-label" for="remember2">
+              1
+            </label>
+          </div>          
+          <div class="custom-control custom-checkbox">
+            <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember22">
+            <label class="form-check-label custom-control-label" for="remember22">
+              2
+            </label>
+          </div>   
+          <div class="custom-control custom-checkbox">
+            <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember32">
+            <label class="form-check-label custom-control-label" for="remember32">
+              3
+            </label>
+          </div>                              
+          <div class="custom-control custom-checkbox">
+            <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember42">
+            <label class="form-check-label custom-control-label" for="remember42">
+              4
+            </label>
+          </div>            
+          <div class="custom-control custom-checkbox">
+            <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember5">
+            <label class="form-check-label custom-control-label" for="remember5">
+              5
+            </label>
+          </div>    
+        </div>                   
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 5 / Checkbox Vertical with Text</label>
+          <div class="custom-control pl-0">
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember2a">
+              <label class="form-check-label custom-control-label" for="remember2a">
+                1
+              </label>
+            </div>          
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember22a">
+              <label class="form-check-label custom-control-label" for="remember22a">
+                2
+              </label>
+            </div>   
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember32a">
+              <label class="form-check-label custom-control-label" for="remember32a">
+                3
+              </label>
+            </div>                              
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember42a">
+              <label class="form-check-label custom-control-label" for="remember42a">
+                4
+              </label>
+            </div>            
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input class="form-check-input custom-control-input" type="checkbox" value="remember-me" id="remember5a">
+              <label class="form-check-label custom-control-label" for="remember5a">
+                5
+              </label>
+            </div>                  
+          </div>
+        </div>
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 6 / Star Rating</label>
+        </div> 
+        <div class="form-group form-label">
+          <label for="inputGroupSelect03224">Survey Question 7 / Slider</label>
+        </div>         
+      </form>      
+    </div>
   </div>
 
   
